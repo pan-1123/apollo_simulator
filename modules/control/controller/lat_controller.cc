@@ -486,7 +486,7 @@ Status LatController::ComputeControlCommand(
                                   matrix_r_, lqr_eps_, lqr_max_iteration_,
                                   &matrix_k_);
   } else {
-    common::math::SolveLQRProblem((matrix_adc_, matrix_bdc_, matrix_q_,
+    common::math::SolveLQRProblem(matrix_adc_, matrix_bdc_, matrix_q_,
                                   matrix_r_, lqr_eps_, lqr_max_iteration_,
                                   &matrix_k_);
   }
